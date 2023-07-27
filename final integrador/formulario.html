@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!--------------------------Bootstrap------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Regitrarse</h1>
+        </div>
+    </header>
+    <main id="main">
+        <form class="formulario" id="formulario">
+            <!--nombre-->
+            <div class="formulario__grupo " id="grupo__nombreCompleto">
+                <label for="nombreCompleto" class="formulario__label">Usuario:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombreCompleto" id="nombreCompleto" placeholder="Introduzca su nombre">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark" ></i>
+                </div>
+                <p class="formulario__input-error">El campo de nombre solo puede tener letras</p>
+            </div>
+            <!--mail-->
+            <div class="formulario__grupo" id="grupo__mail">
+                <label for="mail" class="formulario__label">Email:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="mail" id="mail" placeholder="Introduzca su email">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark" ></i>
+                </div>
+                <p class="formulario__input-error">Su mail debe respetar el formato adecuado, ejem: nombre@email.com</p>
+            </div>
+            <!--contraseña-->
+            <div class="formulario__grupo" id="grupo__contrasenia">
+                <label for="contrasenia" class="formulario__label">Contreseña:</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="contrasenia" id="contrasenia" placeholder="Introduzca su contraseña">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark" ></i>
+                </div>
+                <p class="formulario__input-error">La contraseña admite debe tene minimo 4 digitos</p>
+            </div>
+            <!--contraseñia2-->
+            <div class="formulario__grupo" id="grupo__contraseniaCo">
+                <label for="contraseniaCo" class="formulario__label">Repetir contraseña:</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="contraseniaCo" id="contraseniaCo" placeholder="Introduzca de nuevo su contraseña">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark" ></i>
+                </div>
+                <p class="formulario__input-error">Las contraseñias deben coincidir</p>
+            </div>
+            <!--terminos-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label for="" class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+            <!--mensaje de error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario</p>
+            </div>
+            <!--boton-->
+            <div class="formulario__grupo formulario__grupo--btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Mensaje enviado con exito</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h5>Footer</h5>
+    </footer>
+    <script src="https://kit.fontawesome.com/a831a4eb71.js" crossorigin="anonymous"></script>
+    <script src="validaciones.js"></script>
+   
+</body>
+
+</html>
